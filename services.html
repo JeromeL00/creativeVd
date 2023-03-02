@@ -27,7 +27,7 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="updates.html">Updates</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </nav> 
     
@@ -191,6 +191,14 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        const nav = document.querySelector("nav");
+        const toggleMenu = document.querySelector(".toggle__menu");
+    
+        toggleMenu.addEventListener("click", ()=>{
+            toggleMenu.classList.toggle("open");
+            nav.classList.toggle("open");
+        });
+    </script>
 </body>
 </html>
