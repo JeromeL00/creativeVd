@@ -93,6 +93,9 @@ nav ul li a:hover {
     border-radius: 0.5rem;
     transition: 0.5s ease-in;
 }
+nav ul li a.active{
+    color: var(--primary);
+}
 
 @media (max-width: 768px) {
     .toggle__menu{
@@ -389,7 +392,7 @@ nav ul li a:hover {
     align-items: center;
 }
 @media (max-width: 998px) {
-    .footer__wrapper {
+    .footer__wrapper{
         flex-direction: column;
     }
 }
@@ -669,6 +672,11 @@ nav ul li a:hover {
     .latest__wrapper{
         grid-template-columns: 1fr;
     }
+    
+    .recent img {
+        width: 30% !important;
+        margin: 1rem;
+    }
 }
 .latestcontents_left img{
     width: 100%;
@@ -684,8 +692,21 @@ nav ul li a:hover {
     align-items: center;
     margin: 0;
 }
+@media (max-width: 998px){
+    .latest_icons ul {
+        gap: 1rem;
+    }
+    .latest_icons{
+        font-size: 0.8rem;
+    }
+}
 .latest_icons p{
     align-items:center ;
+}
+.concept{
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 0.1px lightgray;
 }
 .concept h3{
     color: var(--primary)
@@ -694,6 +715,19 @@ nav ul li a:hover {
     text-align: justify;
 }
 .concept a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.concept2{
+    margin-bottom: 3rem;
+}
+.concept2 h3{
+    color: var(--primary)
+}
+.concept2 p{
+    text-align: justify;
+}
+.concept2 a{
     text-decoration: none;
     color: var(--primary);
 }
@@ -761,6 +795,11 @@ nav ul li a:hover {
 .tags a:hover{
     background-color: var(--black);
     color: var(--white);
+}
+@media (max-width: 998px){
+    .tags a{
+        flex-direction: column;
+    }
 }
 /*----------------------------------*/
 
