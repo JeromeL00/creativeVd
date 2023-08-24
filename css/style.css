@@ -93,11 +93,11 @@ nav ul li a:hover {
     border-radius: 0.5rem;
     transition: 0.5s ease-in;
 }
-nav ul li a.active{
+nav ul li a.active{ 
     color: var(--primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .toggle__menu{
         display: block;
     }
@@ -109,12 +109,13 @@ nav ul li a.active{
         display: block;
         position: absolute;
         right: -100%;
-        top: 5.9rem;
-        background-color: var(--white);
+        top: 5.7rem;
+        background-color: var(--black);
         width: 100%;
         height: 100vh;
         text-align: left;
         transition: 0.5s ease-in;
+
     }
     nav ul li a {
         display: inline-block;
@@ -329,6 +330,7 @@ nav ul li a.active{
     background-color: var(--primary);
     text-align: center;
 }
+
 .contact h5 {
     color: var(--black);
     font-size: 25px;
@@ -355,6 +357,11 @@ nav ul li a.active{
 .contact a:hover {
     background-color: var(--gray);
     color: var(--black);
+}
+@media (max-width: 998px) {
+    .contact {
+        padding: 30px 2rem;
+    }
 }
 /*----------------------------------*/
 .footer {
@@ -395,6 +402,13 @@ nav ul li a.active{
     .footer__wrapper{
         flex-direction: column;
     }
+    .sociallinks {
+        display: block;
+    }
+    .sociallinks ul {
+        position: relative;
+        left: 6.7rem;
+    }
 }
 /*-------------Home Page ends here-------------------*/
 .aboutme {
@@ -433,9 +447,13 @@ nav ul li a.active{
 @media (max-width: 998px) {
     .aboutme__wrapper {
         flex-direction: column;
+        padding: 2rem 0;
     }
     .aboutme img {
         width: 100% !important;
+    }
+    .aboutme h1 {
+        font-size: 3rem;
     }
 }
 .arrowdown{
@@ -457,7 +475,7 @@ nav ul li a.active{
 }
 /*------------------------------*/
 .projects {
-    padding: 6rem;
+    padding: 6rem 0;
     background-color: var(--black);
 }
 
@@ -492,6 +510,7 @@ nav ul li a.active{
 @media (max-width: 998px){
     .projects__wrapper{
         grid-template-columns: 1fr;
+        padding: 0 3rem;
     }
     .projects img{
         width: 100% !important;
